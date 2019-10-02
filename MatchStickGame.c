@@ -12,8 +12,7 @@ while(1)
     printf("\n>>YOUR TURN:\nPick 1 or 2 or 3 or 4 matchsticks out of LEFT %d.:",m);
     fflush(stdin);
 	scanf("%d",&user);
-	if((user==1||user==2||user==3||user==4)&&(user<=m));
-	else
+	if(!(user==1||user==2||user==3||user==4)&&(user<=m))
 	{
 	printf("\nINVALID Response! TRY again!\n");
 	goto START;	
